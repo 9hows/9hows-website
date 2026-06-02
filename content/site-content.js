@@ -39,30 +39,22 @@ window.SITE_CONTENT = {
     ]
   },
   fit: {
-    eyebrow: "Who we work with",
-    title: "Built for B2B product companies, not generic service businesses.",
-    goodTitle: "Good fits",
-    lessTitle: "Less good fits",
-    goodFits: [
-      "manufacturers",
-      "specialist B2B product companies",
-      "professional-use product companies",
-      "technical/specialist suppliers",
-      "cleanroom/facility/lab/safety product companies",
-      "automotive aftermarket suppliers",
-      "industrial consumables",
-      "specialty products",
-      "US companies entering Europe",
-      "European companies expanding beyond their home market"
+    eyebrow: "Who we help",
+    title: "We help manufacturers and specialist B2B product companies open qualified sales conversations in new European markets.",
+    paragraphs: [
+      "Our work is relevant for companies that sell physical, technical, professional-use or specialist products or services to other businesses, whether through direct sales, distributors, dealers, agents or channel partners.",
+      "We are not limited to one industry. The common factor is not the sector, but the commercial challenge: you have a product with a clear business buyer, and you want to reach more of the right companies in Europe."
     ],
-    lessGoodFits: [
-      "pure SaaS",
-      "generic service companies",
-      "consumer brands",
-      "companies without capacity to follow up",
-      "products needing heavy local service where no channel plan exists",
-      "companies expecting guaranteed revenue within weeks"
-    ]
+    includesTitle: "This can include:",
+    includes: [
+      "manufacturers looking for new buyers, distributors or partners",
+      "specialist product companies entering new European markets",
+      "US companies exploring Europe without building a full local sales team first",
+      "European companies expanding beyond their home market",
+      "B2B suppliers with a niche product that needs a focused, targeted outreach approach",
+      "companies that know there is a market, but need help finding and opening the right conversations"
+    ],
+    closing: "Every project starts with a practical assessment of the product, target market, buyer profile and route to market. If there is a realistic path to qualified conversations, we build from there."
   },
   process: {
     eyebrow: "How it works",

@@ -156,6 +156,9 @@ a {
 
 .hero h1 {
   color: var(--paper);
+  max-width: 900px;
+  font-size: clamp(34px, 4.5vw, 60px);
+  line-height: 1.04;
 }
 
 .section h2 {
@@ -376,6 +379,7 @@ a {
 }
 
 .fit-column,
+.fit-narrative,
 .offer,
 .blog-post,
 .step,
@@ -388,6 +392,70 @@ a {
 .fit-column {
   padding: 34px;
   box-shadow: var(--shadow-soft);
+}
+
+.fit-narrative {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1fr);
+  gap: clamp(28px, 5vw, 58px);
+  padding: clamp(28px, 4vw, 42px);
+  box-shadow: var(--shadow-soft);
+}
+
+.fit-narrative > div {
+  display: grid;
+  gap: 18px;
+}
+
+.fit-narrative p {
+  margin: 0;
+  color: var(--steel);
+  font-size: 18px;
+}
+
+.fit-narrative h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+}
+
+.fit-narrative ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fit-narrative li {
+  position: relative;
+  padding-left: 32px;
+  color: var(--ink);
+}
+
+.fit-narrative li::before {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 999px;
+  color: var(--paper);
+  background: var(--accent);
+  content: "+";
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.fit-narrative > p {
+  grid-column: 1 / -1;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 800;
 }
 
 .fit-column h3,
@@ -680,7 +748,7 @@ a {
   }
 
   .hero h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .hero-panel {
@@ -690,6 +758,7 @@ a {
   .market-card,
   .hero-metrics,
   .fit-grid,
+  .fit-narrative,
   .steps,
   .offer-grid,
   .blog-grid,
@@ -699,6 +768,7 @@ a {
 
   .check-list,
   .fit-column,
+  .fit-narrative,
   .offer,
   .step {
     padding: 24px;

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>9hows | European Lead Generation & Channel Development</title>
     <meta name="description" content="Founder-led European lead generation and channel development for B2B manufacturers and specialist product companies.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -16,6 +18,7 @@
         <a href="#what-we-do">What we do</a>
         <a href="#fit">Who we help</a>
         <a href="#founder">Founder</a>
+        <a href="#team">Team</a>
         <a href="#offers">Offers</a>
       </nav>
       <a class="header-cta" data-content="cta.secondaryLabel" data-href="cta.secondaryHref" href="#contact">Book a call</a>
@@ -33,14 +36,21 @@
           </div>
         </div>
         <div class="hero-panel" aria-label="European market development focus">
-          <img class="hero-logo" src="assets/logo-9hows.png" alt="9hows">
+          <div class="hero-logo-wrap">
+            <img class="hero-logo" src="assets/logo-9hows.png" alt="9hows">
+          </div>
+          <p data-content="hero.panelText"></p>
           <div class="market-card">
             <span>Direct buyers</span>
             <span>Distributors</span>
             <span>Importers</span>
             <span>Partners</span>
           </div>
-          <p>Qualified commercial conversations across European markets.</p>
+          <div class="hero-metrics" aria-label="9hows focus">
+            <span>90-day sprint</span>
+            <span>Founder-led</span>
+            <span>Europe-wide</span>
+          </div>
         </div>
       </section>
 
@@ -89,6 +99,10 @@
       <section class="section founder-band" id="founder">
         <div class="founder-photo">
           <img src="assets/founder-marcel.png" alt="Founder of 9hows">
+          <div class="founder-caption">
+            <strong data-content="founder.name"></strong>
+            <span data-content="founder.role"></span>
+          </div>
         </div>
         <div class="founder-copy">
           <p class="eyebrow" data-content="founder.eyebrow"></p>
@@ -97,6 +111,15 @@
           <h3 data-content="founder.focusTitle"></h3>
           <div class="pill-grid compact" data-list="founder.focusAreas"></div>
         </div>
+      </section>
+
+      <section class="section team-section" id="team">
+        <div class="section-heading">
+          <p class="eyebrow" data-content="team.eyebrow"></p>
+          <h2 data-content="team.title"></h2>
+          <p data-content="team.text"></p>
+        </div>
+        <div class="team-grid" data-team="team.members"></div>
       </section>
 
       <section class="section" id="offers">
@@ -117,6 +140,7 @@
 
       <section class="section final-cta" id="contact">
         <h2 data-content="finalCta.title"></h2>
+        <p data-content="finalCta.text"></p>
         <div class="actions">
           <a class="button primary" data-content="finalCta.buttonLabel" data-href="finalCta.buttonHref" href="#contact"></a>
         </div>
@@ -124,8 +148,12 @@
     </main>
 
     <footer class="footer">
-      <img src="assets/logo-9hows.png" alt="9hows logo">
-      <p data-content="footer.text"></p>
+      <div>
+        <img src="assets/logo-9hows.png" alt="9hows logo">
+        <p data-content="footer.text"></p>
+      </div>
+      <address data-content="footer.address"></address>
+      <p class="copyright" data-content="footer.copyright"></p>
     </footer>
 
     <script src="content/site-content.js"></script>

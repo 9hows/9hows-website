@@ -34,7 +34,27 @@
     element.innerHTML = "";
     paragraphs.forEach(function (paragraph) {
       var p = document.createElement("p");
-      p.textContent = paragraph;
+      if (typeof paragraph === "string") {
+        p.textContent = paragraph;
+      } else {
+        var text = paragraph.text || "";
+        var linkText = paragraph.linkText || "";
+        var linkIndex = text.indexOf(linkText);
+        var wrapper = paragraph.strong ? document.createElement("strong") : document.createElement("span");
+        if (paragraph.href && linkText && linkIndex >= 0) {
+          wrapper.appendChild(document.createTextNode(text.slice(0, linkIndex)));
+          var a = document.createElement("a");
+          a.href = paragraph.href;
+          a.textContent = linkText;
+          a.target = "_blank";
+          a.rel = "noreferrer";
+          wrapper.appendChild(a);
+          wrapper.appendChild(document.createTextNode(text.slice(linkIndex + linkText.length)));
+        } else {
+          wrapper.textContent = text;
+        }
+        p.appendChild(wrapper);
+      }
       element.appendChild(p);
     });
   });
@@ -61,6 +81,24 @@
       article.innerHTML = "<h3></h3><p></p>";
       article.querySelector("h3").textContent = offer.title;
       article.querySelector("p").textContent = offer.text;
+      element.appendChild(article);
+    });
+  });
+
+  setText("[data-team]", function (element) {
+    var members = getValue(element.getAttribute("data-team")) || [];
+    element.innerHTML = "";
+    members.forEach(function (member) {
+      var article = document.createElement("article");
+      article.className = "team-card";
+      article.innerHTML = "<img><div><h3></h3><p></p><a>LinkedIn profile</a></div>";
+      article.querySelector("img").setAttribute("src", member.image);
+      article.querySelector("img").setAttribute("alt", member.name);
+      article.querySelector("h3").textContent = member.name;
+      article.querySelector("p").textContent = member.role;
+      article.querySelector("a").setAttribute("href", member.linkedin);
+      article.querySelector("a").setAttribute("target", "_blank");
+      article.querySelector("a").setAttribute("rel", "noreferrer");
       element.appendChild(article);
     });
   });

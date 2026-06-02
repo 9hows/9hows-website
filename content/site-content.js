@@ -8,11 +8,12 @@ window.SITE_CONTENT = {
   hero: {
     eyebrow: "9hows European B2B growth",
     headline: "European lead generation & channel development for B2B manufacturers and specialist product companies",
-    subheadline: "We help manufacturers and specialist B2B product companies from Europe and the US grow across European markets by opening qualified sales conversations with direct buyers, distributors and partners."
+    subheadline: "We help manufacturers and specialist B2B product companies from Europe and the US grow across European markets by opening qualified sales conversations with direct buyers, distributors and partners.",
+    panelText: "Qualified commercial conversations across European markets with your ideal:"
   },
   problem: {
     eyebrow: "The problem",
-    title: "European growth is not just about finding “more leads”.",
+    title: "European growth is not just about finding \"more leads\".",
     text: "For manufacturers and specialist B2B product companies, growth in Europe often depends on the right mix of direct buyers, distributors, importers, service partners and local market fit. Trade shows create opportunities, but they rarely create a continuous business-development process on their own.",
     bullets: [
       "You know there are more markets to open.",
@@ -96,11 +97,19 @@ window.SITE_CONTENT = {
   founder: {
     eyebrow: "About the founder",
     title: "Founder-led business development, supported by a structured team",
+    name: "Marcel Nijenhuys",
+    role: "Founder & Lead Development Director",
     paragraphs: [
-      "Together with my team, I help manufacturers and specialist B2B product companies from Europe and the US grow across European markets by opening qualified sales conversations with direct buyers, distributors and partners.",
+      "I'm Marcel Nijenhuys, founder of 9hows, and together with my team, I help manufacturers and specialist B2B product companies from Europe and the US grow across European markets by opening qualified sales conversations with direct buyers, distributors and partners.",
       "We identify the right markets, find the right prospects, create the right approach and open doors with buyers, distributors and channel partners.",
       "I started my career in 1996 opening European distribution for a US technical manufacturer, from my base in Amsterdam, the Netherlands. Since then, I have worked in European B2B sales, European market development and in leadership positions in multilingual commercial operations across technical, specialist and complex B2B markets.",
       "When I was still an employee I have worked for US, Dutch, French, German, and Taiwanese companies, and my past positions include Director of Business Development, Regional Director, Vice-President Europe, and General Manager Europe. After that, since 2014, I've founded 5 companies and developed their business across Europe and the USA.",
+      {
+        text: "View my full professional background in my LinkedIn profiel, here.",
+        href: "https://www.linkedin.com/in/marcel-nyenhuis-rwa",
+        linkText: "here",
+        strong: true
+      },
       "With my 9hows team, I build on that experience: founder-led European lead generation and channel development for manufacturers and specialist B2B product companies that want to grow across European markets without building a full in-house business development team.",
       "In short: we know how to open commercial conversations in European markets and have been doing so with a very high success rate for many European and US manufacturers and specialist B2B product companies."
     ],
@@ -137,12 +146,40 @@ window.SITE_CONTENT = {
       }
     ]
   },
+  team: {
+    eyebrow: "Team",
+    title: "A structured team behind founder-led European growth.",
+    text: "9hows combines senior commercial direction with coordinated operational support, specialist product coordination and focused execution.",
+    members: [
+      {
+        name: "Viktorija Cernova",
+        role: "Operations Coordinator",
+        image: "assets/team-viktorija.png",
+        linkedin: "https://www.linkedin.com/in/viktorija-cernova-005199187/"
+      },
+      {
+        name: "Cassandra Galanis",
+        role: "Special Products Coordinator",
+        image: "assets/team-cassandra.png",
+        linkedin: "https://www.linkedin.com/in/cassandra-galanis-ams/"
+      },
+      {
+        name: "Elise Bouwman",
+        role: "Office Manager",
+        image: "assets/team-elise.png",
+        linkedin: "https://www.linkedin.com/in/elise-bouwman-566041217/"
+      }
+    ]
+  },
   finalCta: {
     title: "Want to know where your next European conversations could come from?",
+    text: "Start with a focused conversation about your product, markets and the most realistic commercial openings across Europe.",
     buttonLabel: "Book a 20-minute fit call",
     buttonHref: "mailto:hello@9hows.com?subject=20-minute%20fit%20call"
   },
   footer: {
-    text: "European lead generation & channel development for B2B manufacturers and specialist product companies."
+    text: "European lead generation & channel development for B2B manufacturers and specialist product companies.",
+    address: "Hoogoorddreef 9, 1101 BA Amsterdam",
+    copyright: "© Copyright 9hows! 2024-2026"
   }
 };

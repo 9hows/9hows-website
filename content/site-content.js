@@ -88,11 +88,12 @@ window.SITE_CONTENT = {
   },
   founder: {
     eyebrow: "About the founder",
-    title: "Founder-led business development, supported by a structured team",
+    title: "Founder-executed business development, supported by a structured team",
     name: "Marcel Nijenhuys",
     role: "Founder & Lead Development Director",
     paragraphs: [
-      "I'm Marcel Nijenhuys, founder of 9hows, and together with my team, I help manufacturers and specialist B2B product companies from Europe and the US grow across European markets by opening qualified sales conversations with direct buyers, distributors and partners.",
+      "
+      I'm Marcel Nijenhuys, founder of 9hows, and together with my team, I help manufacturers and specialist B2B product companies from Europe and the US grow across European markets by opening qualified sales conversations with direct buyers, distributors and partners.",
       "We identify the right markets, find the right prospects, create the right approach and open doors with buyers, distributors and channel partners.",
       "I started my career in 1996 opening European distribution for a US technical manufacturer, from my base in Amsterdam, the Netherlands. Since then, I have worked in European B2B sales, European market development and in leadership positions in multilingual commercial operations across technical, specialist and complex B2B markets.",
       "When I was still an employee I have worked for US, Dutch, French, German, and Taiwanese companies, and my past positions include Director of Business Development, Regional Director, Vice-President Europe, and General Manager Europe. After that, since 2014, I've founded 5 companies and developed their business across Europe and the USA.",

@@ -578,6 +578,10 @@ a {
   padding-top: 10px;
 }
 
+.founder-copy [data-paragraphs] {
+  margin-top: 28px;
+}
+
 .founder-copy p + p {
   margin-top: 17px;
 }

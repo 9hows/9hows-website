@@ -145,7 +145,7 @@ window.SITE_CONTENT = {
     members: [
       {
         name: "Viktorija Cernova",
-        role: "Operations Coordinator",
+        role: "Operations Director",
         image: "assets/team-viktorija.png",
         linkedin: "https://www.linkedin.com/in/viktorija-cernova-005199187/"
       },

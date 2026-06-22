@@ -71,6 +71,32 @@ a {
   font-weight: 800;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.language-switcher a {
+  display: inline-grid;
+  min-width: 34px;
+  min-height: 30px;
+  place-items: center;
+  border-radius: 4px;
+  color: var(--night);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.language-switcher a.active {
+  color: var(--paper);
+  background: var(--coral);
+}
+
 .nav a,
 .button,
 .header-cta,
@@ -606,6 +632,10 @@ h3 {
   }
 
   .nav {
+    gap: 0;
+  }
+
+  .nav-link {
     display: none;
   }
 
